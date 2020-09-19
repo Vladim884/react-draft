@@ -36,3 +36,151 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  box-shadow: 0 0 9px 1px rgba(27,27,27,.6);
+  font-family: 'Noto Sans', sans-serif;  z-index: 3;
+  background-color: #141618;
+}
+.navbar .logo {
+  margin-right: 10px;;
+}
+.collapse.show {
+  position: relative;
+  z-index: 3;
+}
+
+.navtop {
+  background-color: transparent;
+  z-index: 3;
+  padding: 0 16;
+  height: 25px;
+  /* background-attachment: fixed;   */
+  background: url(https://www.boostroyal.com/assets/images/new/hero-bg-lux2.jpg) top center fixed  no-repeat;
+
+
+}
+
+.block {
+  position: relative;
+  z-index: 2;
+  top: -113px;
+  height: 580px;
+  /* background-attachment: fixed;  */
+  /* background-position: left 30%;   */
+
+  /* background: url(https://www.boostroyal.com/assets/images/new/hero-bg-lux2.jpg) center center cover no-repeat fixed; */
+  /* background: url(https://www.boostroyal.com/assets/images/new/hero-bg-lux2.jpg) center center no-repeat; */
+}
+
+.block .container_title{
+  position: absolute;
+  top: 190px;
+  /* left: 20%; */
+  /* right: 0; */
+  width: 495px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 55px;
+  z-index: 2;
+  color: #fff;
+  margin: 0 auto 0;
+  text-shadow: 3px 3px 2px rgba(0,0,0,.5);
+}
+.orange {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  box-shadow: 0 0 9px 1px rgba(27,27,27,.6);
+  background: linear-gradient(90deg,#ff9155 0,#d54e4e);
+  border-radius: 3px 4px 4px 3px;
+  border-left: 1px solid #979797;
+  margin-left: 30px;
+  position: relative;
+  color: #fff;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.orange:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -26px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #ff9155;
+}
+
+.orange:after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 22px;
+}
+
+  .subtitle {
+    position: absolute;
+    top: 340px;
+    font-family: 'Noto Sans', sans-serif;
+    color: hsla(0,0%,100%,.8);
+    text-shadow: 3px 3px 2px rgba(0,0,0,.3);
+    font-size: 1.2em;
+    z-index: 2;
+    margin: 36px 0;
+    font-weight: 400;
+}
+/* ======================================= */
+
+.link_group {
+  position: absolute;
+  bottom: 30px;
+}
+.link_group a {
+  margin-right: 10px;;
+  padding: 10px0 20px;
+}
+.hide_menu {
+  display: none;
+}
+
+.show_menu {
+  position: absolute;
+  top: 190px;
+  display: block;
+  width: 500px;
+  height: 200px;
+  background: #d54e4e;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  cursor: pointer;
+
+  }
+
+
+  .lorem {
+    padding: 100px;;
+  }
+
+@media only screen and (max-width: 576px) {  
+  .navtop, .block {
+    background-image: url(https://www.boostroyal.com/assets/images/new/hero-bg-lux-m.jpg) center center no-repeat;
+    background-attachment: fixed;   
+  } 
+}
+
+
