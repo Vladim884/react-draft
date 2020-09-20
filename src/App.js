@@ -1,21 +1,20 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Block from './components/Block';
 import Nav from './components/Nav';
 import ShowWindowDimensions from './components/ShowWindowDimensions';
 import Lorem from './components/Lorem';
+import SectionTop from './components/SectionTop';
 
 function App() {
   return (
     <div>
       <Nav />
       <Navbar />
-      <Block />
+      <SectionTop />
       <Lorem />
-      <Block />
+      {/* <ShowWindowDimensions /> */} 
       <Lorem />
-      {/* <ShowWindowDimensions /> */}
     </div>
   );
 }

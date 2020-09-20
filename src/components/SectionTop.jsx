@@ -1,9 +1,9 @@
 import React from "react";
 
-const Block = () => {
+const SectionTop = () => {
   return (
     <div
-      className="block parallax-window"
+      className="section_top parallax-window"
       data-parallax="scroll"
       data-speed="0.5"
       positionX="left "
@@ -38,4 +38,4 @@ const Block = () => {
   );
 };
 
-export default Block;
+export default SectionTop;

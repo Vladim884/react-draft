@@ -1,16 +1,9 @@
-import headerMenuReducer from "./headerMenuReducer";
-
-// import thunkMiddleware from 'redux-thunk'
-// import { reducer as formReducer } from 'redux-form'
-
-
+import hamburgerMenuReducer from "./hamburgerMenuReducer";
 
 const { createStore, combineReducers, applyMiddleware } = require("redux");
 
-
 let reducers = combineReducers({
-    menu: headerMenuReducer
-
+    hamburgerMenu: hamburgerMenuReducer
 });
 
 let store = createStore(reducers, applyMiddleware());

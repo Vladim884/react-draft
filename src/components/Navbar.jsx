@@ -1,14 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-import {buttonMenuClicked, buttonMenuReClicked} from '../redux/headerMenuReducer';
-// import s from './Navbar.module.css';
+import {onClickHamburgerMenu, onClickMenuClose} from '../redux/actions';
 
 class Navbar extends React.Component{
   
   updateDimensions = () => {
     this.setState({ width: window.innerWidth});
     if(this.state.width > 992){
-      this.props.buttonMenuReClicked()
+      this.props.onClickMenuClose()
     }
   };
   componentDidMount() {
@@ -22,9 +21,17 @@ class Navbar extends React.Component{
     return (
       <nav className="navbar navbar-expand-lg fixed-top sticky-top navbar-dark">
         <div className="container">
-        
-        <div className={this.props.menuClass}>
-          <button className="image" onClick={()=>{this.props.buttonMenuReClicked()}}>X</button>
+        <div className={this.props.hamburgerMenuClass}>
+          <ul>
+            <li>ELO bust services</li>
+            <li>Buy lolaccount</li>
+            <li>Valorant Boosting </li>
+            <li>TFT Boosting</li>
+            <li>Coaching</li>
+            <li>Boosters</li>
+            <li>Blog</li>
+          </ul>
+          <span className="close" onClick={()=>{this.props.onClickMenuClose()}}>X</span>
         </div>
           <a className="navbar-brand" href="#">
             <span className="logo hvr-pulse">
@@ -42,11 +49,11 @@ class Navbar extends React.Component{
           </a>
           <button
             onClick={() => {
-              this.props.buttonMenuClicked();
+              this.props.onClickHamburgerMenu();
             }}
             className="navbar-toggler"
             type="button"
-            // data-toggle="collapse"
+            // data-toggle="collapse" //  commented out for disabling bootstrap js-code
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -121,11 +128,9 @@ class Navbar extends React.Component{
 
 const mapStateToProps = (state) => {
   return {
-    menuClass: state.menu.classMenu,
-    screenWidth: state.menu.width
+    hamburgerMenuClass: state.hamburgerMenu.classMenu,
   }
 }
 
-export default connect(mapStateToProps, {buttonMenuClicked, buttonMenuReClicked})(Navbar);
-// export default Navbar;
+export default connect(mapStateToProps, {onClickHamburgerMenu, onClickMenuClose})(Navbar);
 
