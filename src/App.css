@@ -108,7 +108,7 @@
   top: -20px;
   max-width: 0;
   height: 100vh;
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 
 .hide_menu li {
@@ -166,7 +166,7 @@
 }
 
 .lorem {
-  padding: 100px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 576px) {

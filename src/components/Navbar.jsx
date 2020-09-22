@@ -11,10 +11,11 @@ class Navbar extends React.Component{
     }
   };
   componentDidMount() {
+    console.log('componentDidMount');
     window.addEventListener('resize', this.updateDimensions);
-    
   }
   componentWillUnmount() {
+    console.log('componentWillUnmount');
     window.removeEventListener('resize', this.updateDimensions);
   }
   render() {

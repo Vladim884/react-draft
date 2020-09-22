@@ -6,13 +6,12 @@ const SectionTop = () => {
       className="section_top parallax-window"
       data-parallax="scroll"
       data-speed="0.5"
-      positionX="left "
       data-image-src="https://www.boostroyal.com/assets/images/new/hero-bg-lux2.jpg"
     >
       <div className="container">
         <div className="container_title">
           <h2>
-            Get Your LoL ELO Boost Now and Save Up to{" "}
+            Get Your LoL ELO Boost Now and Save Up to
             <span className="orange">30%</span>
           </h2>
         </div>
@@ -23,13 +22,13 @@ const SectionTop = () => {
           </h6>
         </div>
         <div className="link_group">
-          <a class="btn btn-outline-primary" href="#" role="button">
+          <a className="btn btn-outline-primary" href="#" role="button">
             Boost Me
           </a>
-          <a class="btn btn-outline-warning" href="#" role="button">
+          <a className="btn btn-outline-warning" href="#" role="button">
             Buy LoL Account
           </a>
-          <a class="btn btn-outline-success" href="#" role="button">
+          <a className="btn btn-outline-success" href="#" role="button">
             Coach Me
           </a>
         </div>
